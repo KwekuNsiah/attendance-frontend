@@ -1,0 +1,188 @@
+.cardholder {
+  /* border: 1px solid hsl(0, 0%, 80%); */
+  /* border-radius: 10px; */
+  margin: 10px;
+  padding: 20px;
+  /* box-shadow: 0 0 5px 5px hsla(0, 0%, 0%, 0.1); */
+  display: flex;
+  background-color: 0 0 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.cardclockIn {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  max-width: 40%;
+  flex: 1;
+  box-shadow: 0 0 5px 5px hsla(0, 0%, 0%, 0.1);
+  color: hsl(0, 0%, 0%);
+  text-align: center;
+  padding: 25px;
+}
+
+.cardclockIn .card-clockin-title {
+  color: hsl(218, 83%, 18%);
+  font-size: 25px;
+  margin: 0;
+  font-family: Arail, sans-serif;
+  font-weight: bold;
+}
+
+.cardclockIn .card-clock-in-text {
+  color: hsl(218, 83%, 18%);
+  font-size: 28px;
+  font-family: Arail, sans-serif;
+  font-weight: bold;
+}
+
+.cardclockIn .clock-In-button {
+  border: none;
+  border-radius: 18px;
+  /* box-shadow: 0 0 5px 5px hsla(0, 0%, 0%, 0.1); */
+  padding: 20px;
+  width: 50%;
+  background-color: hsla(237, 87%, 21%, 0.805);
+  color: #fff;
+  font-size: 30px;
+}
+
+.cardclockIn .clock-in-sign-up {
+  color: rgb(62, 62, 130);
+  font-family: Arail, sans-serif;
+}
+
+.cardDashboard {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-top-right-radius: 10px; /* Adjust the value as needed */
+  border-bottom-right-radius: 10px;
+  max-width: 50%;
+  flex: 1;
+  box-shadow: 0 0 5px 5px hsla(0, 0%, 0%, 0.1);
+  text-align: justify;
+  padding-left: 30px;
+  /* background-color: #fafafa; */
+  background-color: 0 2px 2px hsla(0, 0%, 0%, 0.1);
+}
+
+.cardDashboard .card-dashboard-header {
+  color: hsl(218, 83%, 18%);
+  font-size: 30px;
+  font-family: Arail, sans-serif;
+  font-weight: bold;
+}
+
+.cardDashboard .card-dashboard-current-date {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 17px;
+  width: 70%;
+  box-shadow: 0 0 2px 2px hsla(0, 0%, 0%, 0.1);
+  padding-left: 20px;
+  background-color: #fff;
+}
+
+.date-text {
+  color: rgb(62, 62, 130);
+  font-family: Arail, sans-serif;
+  padding-bottom: 0px;
+  font-size: 18px;
+}
+
+.current-date-text {
+  color: hsl(218, 83%, 18%);
+  font-size: 23px;
+  font-family: Arail, sans-serif;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.dashboard-summary-header {
+  color: hsl(218, 83%, 18%);
+  font-size: 22px;
+  font-family: Arail, sans-serif;
+  font-weight: bold;
+}
+.attendance-summary-cont {
+  display: flex;
+}
+/* .check-circle {
+  margin-left: -20px;
+} */
+
+.worked-days-container {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px; /* Adjust the value as needed */
+  max-width: 20%;
+  max-height: 23%;
+  flex: 1;
+  box-shadow: 0 0 5px 5px hsla(0, 0%, 0%, 0.1);
+  text-align: justify;
+  /* padding-left: 30px; */
+  /* background-color: #fafafa; */
+  background-color: 0 2px 2px hsla(0, 0%, 0%, 0.1);
+}
+.worked-days-text {
+  color: rgb(62, 62, 130);
+  font-family: Arail, sans-serif;
+  padding-bottom: 0px;
+  font-size: 16px;
+  margin-top: -5px;
+  margin-left: 14px;
+}
+
+.nos-of-days-text {
+  color: hsl(218, 83%, 18%);
+  font-size: 25px;
+  font-family: Arail, sans-serif;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-left: 14px;
+}
+
+.late-entries-container {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px; /* Adjust the value as needed */
+  max-width: 20%;
+  max-height: 23%;
+  margin-left: 20px;
+  flex: 1;
+  box-shadow: 0 0 5px 5px hsla(0, 0%, 0%, 0.1);
+  text-align: justify;
+  /* padding-left: 30px; */
+  /* background-color: #fafafa; */
+  background-color: 0 2px 2px hsla(0, 0%, 0%, 0.1);
+}
+
+.absent-container {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px; /* Adjust the value as needed */
+  max-width: 20%;
+  max-height: 23%;
+  margin-left: 20px;
+  flex: 1;
+  box-shadow: 0 0 5px 5px hsla(0, 0%, 0%, 0.1);
+  text-align: justify;
+  /* padding-left: 30px; */
+  /* background-color: #fafafa; */
+  background-color: 0 2px 2px hsla(0, 0%, 0%, 0.1);
+}
+
+.clock-circle {
+  margin-top: 10px;
+  width: 50px;
+  height: 40px;
+  margin-left: 5px;
+  margin-bottom: 13px;
+}
+
+.close-cirlce {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+/* .chart-graph {
+  width: 30%;
+  height: 30%;
+} */
