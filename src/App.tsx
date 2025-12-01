@@ -1,7 +1,13 @@
-import { Homepage } from "./components/homepage";
+// import { Homepage } from "../src/pages/homepage";
+import { Login } from "../src/pages/login";
 
 function App() {
-  return <Homepage />;
+  return (
+    <>
+      {/* <Homepage /> */}
+      <Login />
+    </>
+  );
 }
 
 export default App;

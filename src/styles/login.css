@@ -1,0 +1,116 @@
+.formBox {
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 50px 60px 160px;
+  text-align: center;
+  height: 100%;
+  max-height: 400px;
+  border: 3px solid #1a0c55;
+  border-radius: 12px;
+}
+
+.formBox h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #1a0c55;
+  position: relative;
+}
+
+.formBox h1::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #1a0c55;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inputGroup {
+  /* margin: auto; */
+  /* border: 1px solid rgb(30, 30, 83); */
+  /* border: 3px solid #1a0c55; */
+  /* border-radius: 12px;
+  padding: 100px;
+  margin-top: 200px; */
+}
+
+.userIcon,
+.phoneIcon,
+.envelopIcon,
+.lockIcon,
+.deptIcon {
+  width: 100%;
+  max-width: 20px;
+  height: 100%;
+  max-height: 20px;
+}
+
+.inputField {
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+
+  /*After react functionality for switching to sign up or sign in */
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+
+.inputField img {
+  margin-left: 15px;
+  color: #9999;
+}
+
+.inputGroup p {
+  text-align: left;
+  font-size: 15 px;
+}
+
+.inputGroup p a {
+  text-decoration: none;
+  color: #491a96;
+}
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  background: #1a0c55;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.inputGroup {
+  height: 280px;
+}
+.btn-field button.disable {
+  background: #eaeaea;
+  color: #555;
+}
