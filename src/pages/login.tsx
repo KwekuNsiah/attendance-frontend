@@ -157,6 +157,7 @@ export const Login = () => {
       emailFieldRef.current &&
       deptFieldRef.current
     ) {
+      nameFieldRef.current.style.maxHeight = "65px";
       nameFieldRef.current.style.marginBottom = "20px";
       deptFieldRef.current.style.maxHeight = "65px";
       phoneFieldRef.current.style.maxHeight = "65px";
