@@ -11,7 +11,7 @@ interface UserDetails {
   phone: string;
   email: string;
   password: string;
-  department_id: string;
+  department: string;
 }
 
 interface employeeRec {
@@ -32,7 +32,7 @@ export const Login = () => {
     phone: "",
     email: "",
     password: "",
-    department_id: "",
+    department: "",
   });
 
   const [employee, setEmployee] = useState<employeeRec | null>(null);
@@ -111,7 +111,7 @@ export const Login = () => {
       const loginForm = new FormData();
       loginForm.append("email", formData.email);
       loginForm.append("password", formData.password);
-      const res = await api.post(`/employees/login`, loginForm);
+      const res = await api.post(`/login`, loginForm);
       console.log("only res", res);
 
       const { token, employeeRec } = res.data;
@@ -188,14 +188,14 @@ export const Login = () => {
     formData.phone = "";
     formData.email = "";
     formData.password = "";
-    formData.department_id = "";
+    formData.department = "";
   };
   const isFormValid =
     !!formData.fullname &&
     !!formData.phone &&
     !!formData.email &&
     !!formData.password &&
-    formData.department_id;
+    formData.department;
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!isFormValid) {
@@ -209,8 +209,9 @@ export const Login = () => {
       formDataToSend.append("email", formData.email);
       formDataToSend.append("phone", formData.phone);
       formDataToSend.append("password", formData.password);
-      formDataToSend.append("department_id", formData.department_id);
-      const res = await api.post(`/employees`, formDataToSend);
+      formDataToSend.append("department", formData.department);
+      console.log('ALL ENTRIES FROM FORM', 'NAME',formData.fullname, 'EMAIL',formData.email, 'PASSWORD', formData.password, 'DEPT', formData.department, 'PHONE', formData.phone)
+      const res = await api.post(`/employees/create`, formDataToSend);
       const result = res.data;
       console.log("Form submitted to attend backend successfully!");
       console.log("i am formData", result);
@@ -271,8 +272,8 @@ export const Login = () => {
           <div className="inputField" ref={deptFieldRef}>
             <img className="deptIcon" src={deptIdSvg} alt="dept icon" />
             <input
-              value={formData.department_id}
-              id="department_id"
+              value={formData.department}
+              id="department"
               type="text"
               placeholder="Department ID"
               onChange={handleChange}
